@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak & Lokasi Workshop - KaryaTeknik Rental</title>
+  <meta name="description"
+    content="Hubungi tim KaryaTeknik untuk konsultasi alat teknik, sewa genset, bor beton, mesin las, serta informasi lokasi workshop dan jam operasional.">
+  <meta name="keywords"
+    content="kontak karya teknik, alamat sewa alat teknik, workshop rental perkakas, whatsapp rental genset">
+  <meta name="author" content="KaryaTeknik Rental">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="badge-status-dot"></span>
+        <span>Workshop Buka Setiap Hari: <strong>07.30 - 18.00 WIB</strong></span>
+        <span class="divider-dot">•</span>
+        <span>Melayani Antar-Jemput Area Jabodetabek & Sekitarnya</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="https://wa.me/6285179519815" target="_blank" rel="noopener noreferrer" class="top-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          CS & Konsultasi: 0851-7951-9815
+        </a>
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Ganti mode tampilan"
+          title="Ubah tema warna (Nyaman di mata)">
+          <svg id="themeIconSun" class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="themeIconMoon" class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span id="themeToggleText">Mode Redup</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="site-header" id="mainHeader">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="Halaman Utama KaryaTeknik">
+        <div class="logo-icon-wrap">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+            </path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Karya<span>Teknik</span></span>
+          <span class="brand-subtitle">Penyewaan Alat & Perkakas</span>
+        </div>
+      </a>
+
+      <!-- Navbar Search Bar -->
+      <div class="header-search-box">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="navbarSearchInput" placeholder="Cari bor beton, genset, las..."
+          aria-label="Cari alat teknik">
+        <button id="clearSearchBtn" class="clear-search-btn" aria-label="Hapus pencarian"
+          style="display: none;">✕</button>
+      </div>
+
+      <!-- Modular Page Navigation Links -->
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="katalog.html" class="nav-link">Katalog Alat</a>
+        <a href="kalkulator.html" class="nav-link">Simulasi Biaya</a>
+        <a href="cara-sewa.html" class="nav-link">Cara Sewa & FAQ</a>
+        <a href="kontak.html" class="nav-link active">Kontak & Workshop</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="openCartBtn" class="cart-btn" aria-label="Buka Keranjang Sewa">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-label">Daftar Sewa</span>
+          <span id="cartCountBadge" class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Header -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Beranda</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Kontak & Lokasi Workshop</span>
+      </div>
+      <h1 class="page-hero-title">Hubungi Kami & Kunjungi Workshop</h1>
+      <p class="page-hero-desc">
+        Konsultasikan kebutuhan spesifikasi alat proyek Anda bersama mekanik kami, atau datang langsung ke workshop
+        untuk menguji mesin sebelum menyewa.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact & Workshop Section -->
+  <main class="section-features" style="padding-top: 48px;">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Information Card -->
+        <div class="contact-info-card">
+          <span class="sub-badge">Lokasi & Saluran Resmi</span>
+          <h2 style="font-size: 1.65rem; margin-bottom: 24px;">Informasi Workshop</h2>
+
+          <div class="contact-item-row">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-item-text">
+              <h4>Alamat Workshop Fisik:</h4>
+              <p>Jl. Raya Industri No. 45, Sentra Teknik Blok B-08<br>Kawasan Pergudangan Prima, Jabodetabek</p>
+            </div>
+          </div>
+
+          <div class="contact-item-row">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="contact-item-text">
+              <h4>Jam Operasional Workshop:</h4>
+              <p>Senin - Minggu: <strong>07.30 - 18.00 WIB</strong><br><small
+                  style="color:var(--success); font-weight:600;">● Buka Setiap Hari (Termasuk Hari Libur
+                  Nasional)</small></p>
+            </div>
+          </div>
+
+          <div class="contact-item-row">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <div class="contact-item-text">
+              <h4>WhatsApp Hotline & Telepon:</h4>
+              <p><strong>0812-3456-7890</strong> (Fast Response Admin)<br>021-555-8899 (Kantor Operasional)</p>
+            </div>
+          </div>
+
+          <div class="contact-item-row">
+            <div class="contact-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <div class="contact-item-text">
+              <h4>Jangkauan Armada Antar-Jemput:</h4>
+              <p>Jakarta, Bogor, Depok, Tangerang, Bekasi, dan Cikarang.</p>
+            </div>
+          </div>
+
+          <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border-subtle);">
+            <a href="https://wa.me/6281234567890?text=Halo%20KaryaTeknik,%20saya%20mau%20konsultasi%20sewa%20alat"
+              target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block">
+              Chat Langsung via WhatsApp Toko
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Consultation Form -->
+        <div class="contact-form-card">
+          <span class="sub-badge">Formulir Pesan</span>
+          <h3>Kirim Pertanyaan / Reservasi Khusus</h3>
+          <p>Isi formulir di bawah ini untuk mengirimkan pesan otomatis yang terformat rapi ke WhatsApp customer service
+            kami.</p>
+
+          <form id="contactForm">
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="contactName">Nama Lengkap / Nama Perusahaan *</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Contoh: Pak Herman / CV Abadi Karya"
+                required>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="contactPhone">Nomor WhatsApp Aktif *</label>
+              <input type="tel" id="contactPhone" class="form-control" placeholder="Contoh: 08123456789" required>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="contactSubject">Topik / Keperluan Konsultasi:</label>
+              <select id="contactSubject" class="form-control">
+                <option value="Tanya Ketersediaan Alat & Jadwal">Tanya Ketersediaan Alat & Jadwal Booking</option>
+                <option value="Konsultasi Spesifikasi Alat Proyek">Konsultasi Spesifikasi Alat yang Cocok</option>
+                <option value="Permintaan Penawaran Sewa Kontraktor (Mingguan/Bulanan)">Permintaan Penawaran Sewa
+                  Kontraktor (Mingguan/Bulanan)</option>
+                <option value="Pertanyaan Seputar Armada Antar-Jemput">Pertanyaan Seputar Armada Antar-Jemput</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 22px;">
+              <label for="contactMessage">Pesan atau Keterangan Tambahan *</label>
+              <textarea id="contactMessage" class="form-control" rows="4"
+                placeholder="Tuliskan nama alat yang dibutuhkan, lokasi proyek, atau rencana tanggal pemakaian..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp btn-block btn-lg">
+              Kirim Pesan ke WhatsApp CS
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <div class="logo-icon-wrap sm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+              </path>
+            </svg>
+          </div>
+          <span class="brand-title">Karya<span>Teknik</span></span>
+        </div>
+        <p class="footer-tagline">
+          Mitra sewa alat teknik, mesin konstruksi, dan peralatan mekanik terpercaya dengan komitmen keandalan mesin,
+          harga ramah kantong, dan layanan ramah.
+        </p>
+        <div class="footer-contact-items">
+          <div class="f-contact-row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Jl. Raya Industri No. 45, Sentra Teknik Blok B-08</span>
+          </div>
+          <div class="f-contact-row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>Senin - Minggu: 07.30 - 18.00 WIB (Buka Tiap Hari)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Halaman Modul</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="katalog.html">Katalog Alat Lengkap</a></li>
+          <li><a href="kalkulator.html">Kalkulator & Simulasi Sewa</a></li>
+          <li><a href="cara-sewa.html">Panduan & Syarat Sewa</a></li>
+          <li><a href="kontak.html">Kontak & Lokasi Workshop</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Kategori Populer</h4>
+        <ul class="footer-links">
+          <li><a href="katalog.html?cat=power-tools">Power Tools Listrik</a></li>
+          <li><a href="katalog.html?cat=konstruksi">Mesin Cor & Konstruksi</a></li>
+          <li><a href="katalog.html?cat=kebun-pembersih">High Pressure Washer</a></li>
+          <li><a href="katalog.html?cat=ukur-presisi">Laser Level 16 Line</a></li>
+          <li><a href="katalog.html?cat=tangga-k3">Tangga Teleskopik Heavy Duty</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Metode Pembayaran</h4>
+        <p class="f-pay-desc">Mendukung transfer bank, QRIS instan, dan pembayaran tunai saat serah terima alat di
+          workshop.</p>
+        <div class="payment-badges">
+          <span class="pay-chip">QRIS</span>
+          <span class="pay-chip">BCA</span>
+          <span class="pay-chip">Mandiri</span>
+          <span class="pay-chip">BRI</span>
+          <span class="pay-chip">Tunai</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© 2026 KaryaTeknik Rental. Seluruh hak cipta dilindungi undang-undang.</p>
+        <p class="text-muted">Didesain dengan antarmuka nyaman & responsif untuk efisiensi pekerjaan Anda.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Drawer Keranjang Sewa -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Daftar Alat yang Dipilih">
+    <div class="cart-drawer-header">
+      <div class="drawer-title-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <h3>Daftar Sewa Anda</h3>
+      </div>
+      <button class="cart-drawer-close" id="closeCartBtn" aria-label="Tutup Keranjang">✕</button>
+    </div>
+
+    <div class="cart-drawer-body">
+      <div class="cart-items-list" id="cartItemsList"></div>
+      <div class="cart-empty" id="cartEmptyMessage">
+        <div class="cart-empty-icon">🛒</div>
+        <h4>Daftar Sewa Masih Kosong</h4>
+        <p>Silakan telusuri katalog alat kami dan klik tombol <strong>"+ Sewa"</strong> untuk menambahkan unit.</p>
+        <a href="katalog.html" class="btn btn-primary btn-sm">Buka Katalog Alat</a>
+      </div>
+    </div>
+
+    <div class="cart-drawer-footer" id="cartDrawerFooter">
+      <div class="cart-duration-setter">
+        <label for="cartGlobalDays">Rencana Durasi Sewa Keseluruhan:</label>
+        <div class="cart-days-control">
+          <button type="button" class="btn-micro" id="cartDaysMinus">-</button>
+          <input type="number" id="cartGlobalDays" value="1" min="1" max="60">
+          <span>Hari</span>
+          <button type="button" class="btn-micro" id="cartDaysPlus">+</button>
+        </div>
+      </div>
+
+      <div class="cart-total-box">
+        <div class="cart-subtotal-row">
+          <span>Subtotal Sewa:</span>
+          <span id="cartSubtotal">Rp 0</span>
+        </div>
+        <div class="cart-subtotal-row text-success" id="cartDiscountRow" style="display: none;">
+          <span>Diskon Durasi:</span>
+          <span id="cartDiscountVal">- Rp 0</span>
+        </div>
+        <div class="cart-total-row">
+          <span>Estimasi Total:</span>
+          <strong id="cartGrandTotal">Rp 0</strong>
+        </div>
+      </div>
+
+      <button class="btn btn-whatsapp btn-block" id="checkoutWhatsappBtn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+        </svg>
+        Pesan & Tanya Ketersediaan via WA
+      </button>
+      <button class="btn btn-outline-danger btn-sm btn-block mt-2" onclick="app.clearCart()">Kosongkan Daftar</button>
+    </div>
+  </aside>
+
+  <!-- Checkout Information Modal -->
+  <div class="modal-backdrop" id="checkoutModal" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <button class="modal-close-btn" id="closeCheckoutModalBtn" aria-label="Tutup form sewa">✕</button>
+        <div class="checkout-modal-body">
+          <div class="modal-header-icon">📲</div>
+          <h3>Konfirmasi Penyewaan Alat</h3>
+          <p class="modal-sub">Isi nama & lokasi proyek agar pesan WhatsApp terformat otomatis dan cepat diproses tim
+            kami.</p>
+
+          <form id="checkoutForm">
+            <div class="form-group">
+              <label for="custName">Nama Penyewa / Penanggung Jawab *</label>
+              <input type="text" id="custName" class="form-control" placeholder="Contoh: Pak Herman / PT Bangun Maju"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="custPhone">Nomor WhatsApp Aktif *</label>
+              <input type="tel" id="custPhone" class="form-control" placeholder="Contoh: 08123456789" required>
+            </div>
+
+            <div class="form-group">
+              <label for="custAddress">Alamat Proyek / Lokasi Pengantaran *</label>
+              <textarea id="custAddress" class="form-control" rows="2" placeholder="Nama jalan, patokan lokasi..."
+                required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="custDeliveryType">Metode Pengambilan Alat:</label>
+              <select id="custDeliveryType" class="form-control">
+                <option value="Antar ke Lokasi Proyek">Diantar oleh Kurir KaryaTeknik (Area Jabodetabek)</option>
+                <option value="Ambil Sendiri di Workshop">Ambil Sendiri di Workshop (Gratis Ongkir)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="custStartDate">Tanggal Mulai Sewa:</label>
+              <input type="date" id="custStartDate" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp btn-block btn-lg mt-3">
+              Kirimkan ke WhatsApp Toko
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+
+</html>
